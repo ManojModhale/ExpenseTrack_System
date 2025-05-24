@@ -3,27 +3,34 @@
 ## Overview
 
 **ExpenseTrack** is a robust, secure, and feature-rich application developed using Spring Boot, aimed at simplifying expense tracking for employees and managers. This backend provides seamless integration with a MySQL database, secure authentication mechanisms, and RESTful APIs for efficient communication with the frontend.
+ExpenseTrack is a robust, enterprise-grade platform designed for tracking and managing employee expenses efficiently. It supports multi-role functionality, secure authentication, and provides seamless integration with a MySQL database. This backend service, developed using Spring Boot, powers the entire application by exposing RESTful APIs for client interaction.
 
 As a Full Stack Developer, I took charge of all major roles, including frontend and backend development, ensuring a client-centric approach while maintaining a balance between design and functionality. The application follows the MVC design pattern and a layered architecture comprising controllers, services, repository, and models at the backend to ensure modularity, scalability, and maintainability.
 
 ## Features
 
 1. **Multi-Role Functionality**:
-    - Employee: Submit expenses, view approval status.
+    - Employee: Submit expenses, upload receipts, and view status updates.
     - Manager: Review, approve, or reject expenses.
-    - Admin: Manage users and system settings.
+    - Admin: Oversee system operations, manage users, and view reports.
 
 2. **Core Functionalities**:
-    - User registration and login with secure password encryption (BCrypt).
+    - User registration and login with secure authentication and password encryption (BCrypt).
     - Email notifications for expense status updates.
     - Expense receipt file upload and download.
     - API-driven architecture for seamless frontend-backend integration.
 
-3. **Security**: 
+3. **Highlights**:
+    - Modular, layered architecture ensuring scalability and maintainability.
+    - Support for file uploads for receipt attachments.
+    - Real-time notifications powered by email services.
+    - Enum-based roles and categories for type safety and consistency.
+      
+4. **Security**: 
     - REST API authentication with Spring Security.
     - Role-based access control (RBAC) for API endpoints.
 
-4. **Scalable Design**: 
+5. **Scalable Design**: 
     - Layered architecture: Controllers, Services, Repositories, and Models.
     - Modular codebase for easy scalability and maintenance.
 
@@ -129,13 +136,23 @@ Before starting, ensure you have the following installed:
 - [Maven](https://maven.apache.org/)
 - [MySQL Server](https://dev.mysql.com/downloads/installer/)
 
-**Technologies Used**:
-  - Backend Framework: Spring Boot 3.3.11
-  - Database: MySQL
-  - ORM: Spring Data JPA
-  - Security: Spring Security
-  - Email: Spring Boot Mail
-  - Build Tool: Maven
+
+## Technologies Used
+
+### Backend
+- **Spring Boot**: Spring Boot 3.3.11 Framework for developing the backend with REST API.
+- **Spring Data JPA**: ORM tool for database interactions.
+- **Spring Security**: Ensures secure access control and authentication.
+- **JavaMail API**: Spring Boot Mail Facilitates email notifications.
+- **Maven**: Build Tool and Dependency management.
+
+### Database
+- **MySQL**: Relational database for storing application data.
+
+### Tools
+- **Spring Tool Suite (STS)**: IDE for backend development.
+- **Postman**: API testing and debugging.
+- **Git**: Version control.
 
 
 ### Steps to Set Up the Backend
